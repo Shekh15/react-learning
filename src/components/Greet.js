@@ -7,11 +7,12 @@ import React from 'react';
 //export default () => <h1>Hii Kirti</h1>
 
 const Greet = (props) => {
+  const { name, role } = props;
   console.log(props);
   return (
     <div>
       <h1>
-        Hii {props.name} you're {props.role}
+        Hii {name} you're {role}
       </h1>
       {props.children}
     </div>
