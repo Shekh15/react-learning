@@ -8,16 +8,22 @@ export default class EventBind extends Component {
       message: 'Hello',
     };
 
-    this.clickHandler = this.clickHandler.bind(this);
+    //this.clickHandler = this.clickHandler.bind(this);
   }
 
-  clickHandler() {
+  // clickHandler() {
+  //   this.setState({
+  //     message: 'Good bye!!!',
+  //   });
+
+  //   console.log('clickHandler--', this);
+  // }
+
+  clickHandler = () => {
     this.setState({
-      message: 'Good bye!!!',
+      message: 'Good Bye!!!',
     });
-
-    console.log('clickHandler--', this);
-  }
+  };
 
   render() {
     return (
