@@ -5,6 +5,10 @@ import ClassComponent from './components/Welcome';
 import EventHandler from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import UserGreetings from './components/UserGreetings';
+import NameList from './components/NameList';
+import Form from './components/FormComponent';
 
 export default function App() {
   return (
@@ -19,7 +23,19 @@ export default function App() {
       </MyComponent>
       <EventHandler></EventHandler>
       <ClassClick></ClassClick> */}
-      <EventBind></EventBind>
+      {/* <EventBind></EventBind> */}
+
+      {/* using child to invoke parent method using props */}
+      {/* <ParentComponent></ParentComponent> */}
+
+      {/* Conditional rendering */}
+      {/* <UserGreetings></UserGreetings> */}
+
+      {/* List rendering */}
+      <NameList></NameList>
+
+      {/* form */}
+      <Form></Form>
     </div>
   );
 }
