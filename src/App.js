@@ -9,6 +9,8 @@ import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
 import NameList from './components/NameList';
 import Form from './components/FormComponent';
+import LifeCycleHook from './components/LifecycleHooks';
+import ReactFragments from './components/reactFragments';
 
 export default function App() {
   return (
@@ -32,10 +34,17 @@ export default function App() {
       {/* <UserGreetings></UserGreetings> */}
 
       {/* List rendering */}
-      <NameList></NameList>
+      {/* <NameList></NameList> */}
 
       {/* form */}
-      <Form></Form>
+      {/* <Form></Form> */}
+
+      {/* lifecycle hook */}
+      <LifeCycleHook></LifeCycleHook>
+
+      {/* fragements */}
+      <ReactFragments></ReactFragments>
+      
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class ClassClick extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -35,6 +36,8 @@ export default class ClassClick extends Component {
     alert(
       `Hii ${formData.username}, your comment -- ${formData.comments}, selected tech -- ${formData.selectedValue}`
     );
+
+    event.preventDefault();
   };
 
   render() {
